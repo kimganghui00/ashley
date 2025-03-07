@@ -1,0 +1,133 @@
+/* ----------------------- news & notice ----------------------- */
+#notice{
+    width: 100%;
+    height: 818px;
+    background-color: #efefef;
+}
+
+.notice-tit{
+    font-family: 'Cambria', serif;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+.notice-m-tit{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.notice-m-tit::after{
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #222;
+    display: block;
+    margin: 50px auto;
+}
+
+#notice-wrap{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#slider-mask{
+    /* width: 90%;
+    max-width: 1320px;
+    overflow: hidden; 
+    margin: 0 auto; */
+
+    width: 1170px;
+    height: 433px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrap{
+    width: 2340px;
+    position: absolute;
+    left: 0; top: 0px;
+}
+
+.slider{
+    width: 360px;
+    height: 433px;
+    float: left;
+    padding: 0 15px;
+}
+.i-box{
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.i-box > a > img{
+    width: 360px;
+    height: 360px;
+    background-color: #9f9f9f;
+}
+
+.i-box > a > img:hover{
+    transform: scale(1.1);
+}
+
+.t-box{
+    letter-spacing: -0.5px;
+    padding: 0 15px;
+    font-size: 18px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+}
+
+.t-box p{
+    padding-top: 12px;
+}
+
+.t-box span{
+    font-size: 14px;
+    color: #999;
+    margin-top: 12px;
+    display: block;
+    padding-bottom: 12px;
+}
+
+.notice-btn{
+    position: absolute;
+    top: 160px;
+    z-index: 999;
+}
+
+#left{
+    left: 10%;
+}
+
+#right{
+    right: 10%;
+}
+
+.notice-b-btn{
+    display: block;
+    margin: 50px auto;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+}
+
+.notice-b-btn:hover{
+    color: #ff4200;
+    border-bottom: 2px solid #ff4200;
+}

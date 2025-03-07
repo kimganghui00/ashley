@@ -1,0 +1,224 @@
+@media screen and ( max-width : 1176px ) {
+
+/* ----------------------- header ----------------------- */
+header{
+    padding: 30px 0;
+    position: fixed;
+    right: 0; top: 0;
+    z-index: 999;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+nav{
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    padding-left: 0;
+    box-sizing: border-box;
+    display: none;
+
+}
+
+nav.active{
+    display: block;
+}
+
+.gnb{
+    line-height: 60px;
+}
+
+.gnb li{
+    float: none;
+    margin-left: 0;
+}
+
+.gnb li:nth-child(7)::before{
+    content: "";
+    width: 10%;
+    height: 1px;
+    background-color: #666;
+    display: block;
+    margin: 20px auto;
+}
+
+.gnb li:nth-child(7){
+    margin-left: 0;
+    padding: 0;
+    border-right: none;
+    font-size: 1rem;
+}
+
+.gnb li:nth-child(8){
+    margin-left: 0;
+    font-size: 1rem;
+}
+
+.more-btn{
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 30px;
+    width: 34px;
+    height: 30px;
+}
+
+.hamburger{
+    transition: .3s ease-in-out;
+}
+
+.hamburger span{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+.hamburger span:nth-child(1){
+    top: 0;
+}
+
+.hamburger span:nth-child(2), .hamburger span:nth-child(3){
+    top: 13px;
+}
+
+.hamburger span:nth-child(4){
+    top: 26px;
+}
+
+.hamburger.active span:nth-child(1), .hamburger.active span:nth-child(4){
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+/* ----------------------- main ----------------------- */
+main{
+    position: relative;
+    width: 100%;
+    height: 58vw;
+    overflow: hidden;
+}
+
+main img{
+    width: 142%;
+}
+/* ----------------------- news & notice ----------------------- */
+.tit{
+    padding-top: 90px;
+}
+
+.mini-tit{
+    font-size: 22px;
+}
+
+.mini-tit::after{
+    margin: 40px auto;
+}
+
+.swiper-button-prev{
+    right: 86%;
+}
+
+.swiper-button-next{
+    left: 86%;
+}
+
+.swiper {
+    width: 68%;
+}
+
+.b-btn{
+    padding: 60px 0 100px 0;
+}
+
+.t-box{
+    height: auto;
+    font-size: 1em;
+}
+
+/* ----------------------- brand-story ----------------------- */
+section img{
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+}
+
+.section-t-b{
+    width: 100%;
+    float: none;
+    padding: 6% 5%;
+    margin-bottom: 40px;
+}
+
+.section-tit{
+    font-size: 1.8em;
+}
+
+.section-m-tit::after{
+    margin: 6% 0;
+}
+
+.section-p{
+    font-size: 1.4em;
+    line-height: 46px;
+}
+
+.section-btn{
+    right: 5%;
+}
+
+/* ----------------------- mission ----------------------- */
+.m-img{
+    float: none;
+}
+
+#mission-t-b{
+    float: none;
+}
+
+.mission-b{
+    right: 5%;
+}
+
+/* ----------------------- store ----------------------- */
+.select-wrap{
+    margin-bottom: 100px;
+}
+
+select{
+    width: 24%;
+    margin-bottom: 26px;
+}
+    
+form{
+    width: 100%;
+    margin-bottom: 36px;
+}
+    
+.store-btn{
+    width: 100%;
+}
+
+/*  ----------------------- instagram  ----------------------- */
+#i-img-wrap{
+    margin-bottom: 80px;
+}
+
+}/* end */
+
+@media screen and (max-width:1048px){
+    .t-box{
+        height: 102px;
+    }
+}
+

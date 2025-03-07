@@ -1,0 +1,490 @@
+*{margin: 0; padding: 0;}
+
+body{
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#wrap{
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    max-width: 1320px;
+    overflow: hidden; 
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ----------------------- header ----------------------- */
+header{
+    width: 100%;
+    height: auto;
+    padding: 35px 0;
+    box-sizing: border-box;
+    background-color: #0E212F;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 146px;
+    height: 30px;
+}
+
+nav{
+    text-align: center;
+    padding-left:60px;
+}
+
+.gnb li{
+    float: left;
+    margin-left: 30px;
+}
+
+.gnb li:hover{
+    color: #ff4200;
+}
+
+.gnb li:nth-child(7){
+    margin-left: 60px;
+    padding: 0 16px;
+    border-right: 1px solid #fff;
+}
+
+.gnb li:nth-child(8){
+    margin-left: 16px;
+}
+
+.more-btn{
+    display: none;
+}
+
+/* ----------------------- main ----------------------- */
+main{
+    position: relative;
+    width: 100%;
+    height: 41vw;
+    overflow: hidden;
+}
+
+main img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+
+}
+
+/* ----------------------- news & notice ----------------------- */
+#notice{
+    width: 100%;
+    height: auto;
+    background-color: #efefef;
+    position: relative;
+}
+
+.tit{
+    font-family: 'Cambria', serif;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+.mini-tit{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mini-tit::after{
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #222;
+    display: block;
+    margin: 50px auto;
+}
+
+.notice-btn{
+    width: 65px;
+    height: 65px;
+    top: 53%;
+}
+
+.swiper-button-prev{
+    right: 88%;
+    left: auto;
+    background: url(../img/notice/left-btn.png);
+    background-size: cover;
+}
+
+.swiper-button-next{
+    left: 88%;
+    background: url(../img/notice/right-btn.png); 
+    background-size: cover;
+}
+
+.swiper-button-next::after , .swiper-button-prev::after{
+    display: none;
+}
+
+.swiper {
+    width: 72%;
+    max-width: 1320px;
+    height: auto;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.i-box{
+    width: 100%;
+    overflow: hidden;
+}
+
+.i-box > a > img:hover{
+    transform: scale(1.1);
+}
+
+.t-box{
+    letter-spacing: -0.5px;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width : 1507px){
+    .t-box{
+        height: 102px;
+    }
+}
+
+.t-box span{
+    font-size: 14px;
+    color: #999;
+    margin-top: 6px;
+    display: block;
+}
+
+.b-btn{
+    padding: 50px 0 80px 0;
+    box-sizing: border-box;
+}
+
+.notice-b-btn{
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+}
+
+.notice-b-btn:hover{
+    color: #ff4200;
+    border-bottom: 2px solid #ff4200;
+}
+
+/* ----------------------- brand-story ----------------------- */
+#brand-story{
+    color: #fff;
+    background-color: #0E212F;
+}
+
+/* section 공통 */
+section{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+section img{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.section-t-b{
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 2.5% 4%;
+    box-sizing: border-box;
+}
+
+.section-tit{
+    font-size: 25px;
+    font-family: 'Cambria', serif;
+    font-weight: 600;
+}
+
+.section-m-tit{
+    font-size: 2.1em;
+    line-height: 1.4em;
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+}
+
+.section-m-tit::after{
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    margin: 8% 0;
+}
+
+.section-p{
+    font-size: 1.2em;
+    line-height: 38px;
+    font-weight: 400;
+    color: #ddd;
+    letter-spacing: -0.5px;
+}
+
+@media screen and ( max-width : 1414px ) {
+    .section-p > br{
+        display: none;
+    }
+}
+
+.section-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 16px;
+    font-weight: 500;    
+    letter-spacing: -0.5px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.section-btn:hover{
+    color: #ff4200;
+    border-bottom: 2px solid #ff4200;
+}
+
+/* ----------------------- mission ----------------------- */
+.m-img{
+    float: right;
+}
+
+#mission-t-b{
+    float: left;
+}
+
+.mission-tit::after{
+    background-color: #222;
+}
+
+.mission-p{
+    color: #222;
+}
+
+.mission-b{
+    right: 54%;
+    border-bottom: 2px solid #222;  
+}
+
+/* ----------------------- homestaurant ----------------------- */
+#homestaurant{
+    background-color: #0E212F;
+    color: #fff;
+}
+
+/* ----------------------- store ----------------------- */
+#store{
+    width: 100%;
+    height: auto;
+}
+
+.select-wrap{
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+select{
+    width: 13%;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    padding-bottom: 3px;
+    outline: none;
+}
+
+form{
+    display: inline-block;
+    width: 30%;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 16px;
+    width: 100%;
+    padding: 3px;
+    outline: none;
+}
+
+.store-btn{
+    background-color: #0E212F;
+    color: #fff;
+    width: 112px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ----------------------- banner ----------------------- */
+#banner{
+    width: 100%;
+    height: 350px;    
+    background-image: url(../img/매장이미지.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* filter: grayscale(100%); */
+}
+
+/*  ----------------------- instagram  ----------------------- */
+#instagram{
+    width: 100%;
+    height: auto;
+}
+
+#i-img-wrap{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.ins-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.ins-box li{
+    width: 23.5%;
+    margin-bottom: 2.3%;
+}
+
+.ins-box li a img{
+    width: 100%;
+}
+
+/* ----------------------- footer ----------------------- */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #0E212F;
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+
+#f-c{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#f-text{
+    width: 70%;
+}
+
+footer h1 img{
+    width: 93px;
+    height: 19px;
+}
+
+footer p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #999;
+}
+
+strong{
+    font-weight: 600;
+}
+
+#f-more{
+    min-width: 243px;
+    width: 20%;
+}
+
+.icon{
+    float: left;
+    padding: 0 6px;
+}
+
+#fam{
+    min-width: 150px;
+    width: 60%;
+    height: 32px;
+    line-height: 3px;
+    float: right;
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 0 4px;
+    outline: none;
+}
+
+#fam > option{
+    color: #222;
+}
